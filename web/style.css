@@ -1,0 +1,127 @@
+body {
+  font-size: 15px;
+  line-height: 1.25;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #e3e3e3;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(50,50,186,1) 0%, rgba(12,139,164,1) 61%, rgba(68,152,122,1) 90%);
+}
+* {
+  transition: all ease-in-out .2s;
+  -ms-transition: all ease-in-out .2s;
+  -moz-transition: all ease-in-out .2s;
+  -webkit-transition: all ease-in-out .2s;
+  -o-transition: all ease-in-out .2s;
+}
+.container {
+  display: block;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.main-wrapper h1,
+.main-wrapper h2,
+.main-wrapper h3 {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 400px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  border: none;
+  border-radius: 25px;
+  background:rgba(68,152,122,0.75);
+  color: #e3e3e3;
+}
+.login-form legend {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  font-size: 18px;
+  text-overflow: ellipsis;
+  text-shadow: 1px 1px 1px 1px #c69e9e;
+  margin-bottom: 20px;
+}
+.login-form .form-group label {
+  margin-bottom: 4px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style:italic;
+  max-width: 100px;
+  width: 100%;
+}
+.login-form .form-group .input-login:hover,
+.login-form .form-group .input-login:focus,
+.login-form .form-group .input-login:active {
+  border:none;
+  background-color: #c69e9e;
+}
+.btn {
+  padding: 7px 15px;
+  border: none;
+  border-radius: 15%;
+  background-color: #134115;
+  color: #fff;
+  height: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #2678aa;
+  color: #134115;
+}
+.login-form .form-group .input-login {
+  padding: 4px 6px;
+  line-height: 1.2;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style:italic;
+  border: none;
+  border-radius: 4px;
+  background-color: #c7c7c79a;
+  color: #0f0f0f;
+  max-width: 300px;
+  width: 100%;
+}
+.login-form .form-group .input-login.success-input {
+  background-color: #17ba1f;
+  color: #000;
+}
+.login-form .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.login-form .form-group:nth-last-of-type(2) {
+  margin-bottom: 15px;
+}
+.main-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

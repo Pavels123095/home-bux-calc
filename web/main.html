@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House - business</title>
+  <script src="eel.js"></script>
+  <link rel="icon" type="image/png" href="/pie-chart-icon.png">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+      <main role="main" class="main-wrapper">
+          <h2>Добро пожаловать</h2>
+          <form class="login-form">
+            <legend>Выполните вход</legend>
+            <div class="form-group">
+              <label for="login">Ваш логин:</label>
+              <input id="login" type="text" placeholder="login" name="login" class="input-login">
+            </div>
+            <div class="form-group">
+              <label for="password">Ваш пароль:</label>
+              <input id="password" type="password" placeholder="password" name="password" class="input-login">
+            </div>
+            <div class="form-group">
+              <button id="sign" type="submit" class="btn btn-login">Войти</button>
+            </div>
+          </form>
+          <hr>
+          <div id="result" class="result"></div>
+      </main>
+    </div>
+    <script>
+      async function signUp() {
+        let login = document.getElementById('login').value;
+        let password = document.getElementById('password').value;
+
+        let res = await eel.signUp(login,password)();
+        document.getElementById('result').innerHTML = 'Ваш логин: ' + res[0];
+      }
+      let btn = document.getElementById('sign');
+      btn.addEventListener('click', function () {
+        signUp();
+      });
+    </script>
+</body>
+</html>
